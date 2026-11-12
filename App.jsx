@@ -305,6 +305,61 @@ const CSS=`
   .drawer-section{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:18px 0 10px;padding-bottom:6px;border-bottom:1px solid rgba(136,146,176,.12)}
   .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
   .form-grid .span2{grid-column:span 2}
+    /* === MODERNISATION DU TABLEAU DE BORD === */
+  .dash-shell {
+    background: #f4f7fb !important;
+    color: #1e293b !important;
+  }
+
+  .dash-main {
+    background: #f4f7fb !important;
+    color: #1e293b !important;
+  }
+
+  .sidebar {
+    background: #123b70 !important;
+    color: #ffffff !important;
+  }
+
+  .card {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border: 1px solid #e5eaf1 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 16px rgba(15, 40, 80, 0.05) !important;
+  }
+
+  .stat-tile {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border: 1px solid #e5eaf1 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 16px rgba(15, 40, 80, 0.05) !important;
+  }
+
+  .stats-strip {
+    gap: 14px !important;
+  }
+
+  @media (max-width: 768px) {
+    .dash-shell {
+      flex-direction: column !important;
+    }
+
+    .sidebar {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .dash-main {
+      width: 100% !important;
+      padding: 14px !important;
+    }
+
+    .stats-strip {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+  }
 `;
 
 
